@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin login</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript">
+function adminValidation(){
+    var adminId=document.frm.id.value;
+    var adminPw=document.frm.pass.value;
+    if((adminId=="")&&(adminPw=="")){
+        alert("Please enter your id and password");
+        return false;
+    }else if(adminId==""){
+        alert("Enter your id");
+        return false;
+    }else if(adminPw==""){
+        alert("Enter your password");
+        return false;
+    }else if((adminId!="admin") && (adminPw!="admin@123")){
+       alert("Incorrect username/Password");
+       return false;
+    }
+}
+</script>
+</head>
+<body class="home_container">
+		<header>
+			<div class="container">
+			<div class="logo_container">
+				<figure><a><img src="logo.png" alt="Train_logo"></a></figure>
+			</div>
+			<ul class="home_sub_container">
+				<!--  <li><a href="newuserlogin.html">Register Here </a></li>
+				<li class="signup_link"><a href="userlogin.html" > Sign in </a></li>
+				<li class="slash">/</li>
+				<li class="login_link"><a href="newuserlogin.html">Sign up</a></li>-->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="train_info.html">About Indian Railways</a></li>
+				
+			</ul>
+		</div>
+		</header>
+		<main>
+		<div class="admin_heading_container">
+			<h3>Enter admin details</h3>
+		</div>
+			<form name="frm" action="Adminlogin" class="admin_form_container" onsubmit="return adminValidation()">
+				<table>
+					<tr><td>Enter LoginId</td><td><input type="text" name="id"></td></tr>
+					<tr><td>Enter password</td><td><input type="password" name="pass"></td></tr>
+					<tr class="user_submit"><td colspan="2"><input type="submit" value="Login"></td></tr>                       
+				</table>
+			</form>
+		</main>
+
+</body>
+</html>

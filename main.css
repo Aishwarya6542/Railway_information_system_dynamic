@@ -1,0 +1,412 @@
+@charset "ISO-8859-1";
+/*------------------------------Home-Page-----------------------------------*/
+html,body{
+    height: 100%;
+}
+li{
+    list-style-type: none;
+}
+figure,ul,body{
+    margin: 0px;
+}
+ul{
+    padding: 0px;
+}
+.home_container{
+	background-image:url("trainbground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    /* position: fixed; */
+    background-color: #2F6193;
+    padding: 0px 10px;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+    /* background-color: #2F6193; */
+    padding: 10px 0px;
+}
+.logo_container{
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.logo_container a{
+    display: block;
+}
+.logo_container img{
+    max-width: 110px;
+    border-radius: 50%;
+}
+.home_sub_container{
+    width: 80%;
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: middle;
+    text-align: right;
+    
+}
+.home_sub_container li{
+    display: inline-block;
+    text-align: right;
+    font-style: italic;
+    margin: 0px 10px 0px 10px;
+    
+}
+.home_sub_container li:first-child{
+    margin-left: 0px;
+}
+.home_sub_container li:last-child{
+    margin-right: 0px;
+}
+.home_sub_container li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px;
+}
+.home_sub_container li a:hover{
+    background-color: seashell;
+    color: #2F6193;
+}
+.home_sub_container .signup_link {
+    margin-right: 0px;
+}
+.home_sub_container .slash {
+    margin: 0px;
+    color: white;
+}
+.home_sub_container .login_link {
+    margin-left: 0px;
+}
+main{
+    width: 100%;
+    /*height: 100%;*/
+}
+.homepage_container{
+    height: 100%;
+}
+.banner-container{
+    position: relative;
+    height: 100%;
+}
+.banner-container .common-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.heading-container{
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.banner-sub-content{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.width-container{
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+.heading-container h1{
+    display: inline-block;
+    font-family: GoBold-Regular;
+    background-color: #CDCCD3;/*#CDCCD3*/
+    text-shadow: 2px 2px 2px #000;
+    margin: 0px;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 2px 2px 4px 6px  #ccc;
+}
+.width-container p{
+    background-color: #CDCCD3;
+    color: black;
+    font-size: 20px;
+    padding: 12px;
+    box-shadow: 2px 2px 4px 6px #ccc;
+    width: 70%;
+    margin: 30px auto 0px auto;
+}
+
+/*---------------------------------NEW-USER LOGIN----------------------------*/
+.new_heading_container{
+    text-align: center;
+    background-color: #E2A884;
+    width: 50%;
+    margin: 28px auto 0px auto;
+    padding: 0px 10px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+}
+.new_heading_container h3{
+    font-size: 26px;
+    color: black;
+    text-shadow: 1px 1px 1px red;
+}
+.newlogin_container{
+	width: 100%;
+    background-image:url("userbg.jpg");
+	height: 100%; 
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.subnewlogin_container{
+	width:70%;
+	margin: 0px auto;
+}
+.subnewlogin_container table{
+    margin: 40px auto auto auto;
+}
+.subnewlogin_container form{
+    width: 50%;
+    margin: 0px auto;  
+}
+.form_container table{
+    background-color: #D7B193;
+    padding: 30px 40px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+}
+.required{
+    color: red;
+    vertical-align: top;
+}
+.credential_heading{
+    margin: 10px;
+}
+.new_user_submit{
+    text-align: center;
+}
+.sub_btn{
+    background-color: #50463C;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.sub_btn:hover{
+    background-color: white;
+    color: #50463C;
+}
+.account_container{
+    margin-top: 12px;
+}
+.account_container a{
+    color: white;
+    padding: 10px;
+}
+.account_container a:hover{
+    color: red;
+}
+/*---------------------------------USER LOGIN----------------------------*/
+.user_container{
+	width: 100%;
+    background-image: url(userbg.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.user_heading_container{
+    text-align: center;
+    background-color: #E2A884;
+    width: 50%;
+    margin: 28px auto 0px auto;
+    padding: 0px 10px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+}
+.user_heading_container h3{
+    color: black;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px red;
+}
+.userlogin_container table{
+    margin: 40px auto auto auto;
+    background-color: #D7B193;
+    padding: 25px 35px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+}
+.userlogin_container form{
+    width: 50%;
+    margin: 0px auto;
+}
+.user_submit{
+    text-align: center;
+}
+.password_container{
+    margin: 10px auto;
+    width: 50%;
+}
+.password_container input{
+    background-color: #2F6193;
+    padding: 3px;
+    color: white;
+    border: 2px solid red;
+}
+.password_container input:hover{
+    background-color: #D7B193;
+    color: #2F6193;
+    border: 2px solid #534287;
+}
+.password_container a{
+    margin-left: 55px;
+    border: 2px solid red;
+    padding: 3px;
+    background-color: #2F6193;
+    color: white;
+    text-decoration: none;
+}
+.password_container a:hover{
+    background-color: #D7B193;
+    color: #2F6193;
+    border: 2px solid #534287;
+}
+/*---------------------------------ADMIN LOGIN----------------------------*/
+.admin_container{
+    background-image: url(adminbg.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.admin_heading_container{
+    text-align: center;
+    background-color: #E2A884;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+    width: 50%;
+    margin: 28px auto 0px auto;
+    padding: 0px 10px;
+    text-shadow: 2px 2px 2px #fff;
+}
+.admin_form_container{
+    margin: 60px auto 0px auto;
+    width: 20%;
+    /*color: white;*/
+    background-color: #E2A884;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+}
+.admin_form_container .user_submit input{
+    background-color: #50463C;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.admin_form_container .user_submit input:hover{
+    background-color: white;
+    color: #50463C;
+}
+/*-------------------------------Train info ----------------------------------*/
+.information_container{
+	background-image:url("train_info_bg.jpg");
+    width: 100%;
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.information_main_container{
+    background-color: #D7B193;
+    margin: 0px auto;
+    position: relative;
+    width: 90%;
+    padding: 10px 10px 30px 10px;
+}
+.info_container{
+   width: 90%;
+   margin: 0px auto;
+}
+footer{
+    background-color: cyan;
+}
+
+/*---------------------------------User's Page ------------------------------------*/
+.userpage_container{
+    width: 100%;
+    background-image: url(trainlist.jpg);
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.train_table_container{
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+    background-color: cornsilk;
+    padding: 10px 10px 50px 10px;
+}
+.train_list_container{
+    height: 460px; 
+    overflow: auto;
+}
+.train_table_container h2{
+    margin-left: 64px;
+    margin-bottom: 30px;
+}
+.train_table_container table{
+    margin: 0px auto;
+}
+.train_table_container table th{
+    padding: 10px 50px;
+}
+.train_table_container table td{
+    padding: 10px 50px;
+}
+/*---------------------------------Ticket Booking Page ------------------------------------*/
+.booking_subnewlogin_container{
+	width:80%;
+	margin: 0px auto;
+	vertical-align: middle;
+}
+.booking_form_container{
+	vertical-align: middle;
+}
+.user-details{
+	display:inline-block;
+	margin:0px 25px 0px 7px;
+	width: 45%;
+}
+.train-details{
+	display:inline-block;
+	margin:0px 7px 0px 25px;
+	width: 45%;
+}
+
+.booking_form_container table{
+    background-color: #D7B193;
+    padding: 30px 40px;
+    box-shadow: 2px 2px 4px 6px  #E2A884;
+    vertical-align: top;
+}
+.ticket_user_submit{
+    text-align: center;
+    margin:30px;
+}
+.ticket_user_submit .sub_btn{
+    background-color: white;
+    color: black;
+    border: none;
+    width:10%;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.ticket_user_submit .sub_btn:hover{
+    background-color: #D7B193;
+    color: #50463C;
+}	

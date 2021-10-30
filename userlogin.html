@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RAILWAY MANAGEMENT SYSTEM - USER LOGIN PAGE</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="validation.js"></script>
+</head>
+<body class="user_container">
+    <header>
+		<div class="container">
+		<div class="logo_container">
+			<figure><a><img src="logo.png" alt="Train_logo"></a></figure>
+		</div>
+		<ul class="home_sub_container">
+			<!--<li><a href="newuserlogin.html">Register Here </a></li>-->
+			<li class="signup_link"><a href="index.html" > Home </a></li>
+			<li><a href="train_info.html">About Indian Railways</a></li>
+			<!--<li><a href="admin_login.html">Admin Login </a></li>-->
+		</ul>
+	</div>
+	</header>
+    <main class="userlogin_container">
+        <div class="user_heading_container">
+			<h3>Login here</h3>
+		</div>
+        <form action="UserLogin" class="user_form_container" >
+            
+                <table>
+                    <tr>
+                        <td>Username </td>
+                        <td><input type="email" name="mail" onfocus="this.value=''" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Password </td>
+                        <td><input type="password" name="pw" onfocus="this.value=''" autocomplete="off"></td>
+                    </tr>
+                    <tr class="user_submit">
+                        <td colspan="2"> <input type="submit" class="sub_btn" value="Submit" onclick="userValidation(mail.value,pw.value)"></td>
+                    </tr>
+                </table>
+                <div class="password_container">
+                    <input type="submit" name="email" value="Forget password ?" onclick="sent()">
+                    <a href="newuserlogin.html">Create new account</a>
+                </div>   
+            
+        </form>
+        
+    </main>
+</body>
+</html>

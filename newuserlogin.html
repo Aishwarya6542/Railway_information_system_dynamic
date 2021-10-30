@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RAILWAY MANAGEMENT SYSTEM - SIGNUP PAGE</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="validation.js"></script>
+</head>
+<body class="newlogin_container">
+    <header>
+		<div class="container">
+		<div class="logo_container">
+			<figure><a><img src="logo.png" alt="Train_logo"></a></figure>
+		</div>
+		<ul class="home_sub_container">
+			<!--<li><a href="newuserlogin.html">Register Here </a></li>-->
+			<li class="signup_link"><a href="index.html" > Home </a></li>
+			<li class="signup_link"><a href="userlogin.html" > Sign in </a></li>
+			<!--<li class="slash">/</li>
+			<li class="login_link"><a href="newuserlogin.html">Sign up</a></li>-->
+			<li><a href="train_info.html">About Indian Railways</a></li>
+			<!--<li><a href="admin_login.html">Admin Login </a></li>-->
+		</ul>
+	</div>
+	</header>
+	<div class="subnewlogin_container">
+		<div class="new_heading_container">
+			<h3>Kindly enter your credentials</h3>
+		</div>
+		<div class="form_container">
+		<form name="frm" action="Newuserlogin">
+			<table>
+				<tr>
+					<td>FirstName </td>
+					<td><input type="text" name="fn" onfocus="this.value=''" autocomplete="off" ><span class="required">*</span></td>
+				</tr>
+				<tr>
+					<td>LastName </td>
+					<td><input type="text" name="ln" onfocus="this.value=''" autocomplete="off"><span class="required">*</span></td>
+				</tr>
+				<tr>
+					<td>Password </td>
+					<td><input type="password" name="pw" onfocus="this.value=''" autocomplete="off"><span class="required">*</span></td>
+				</tr>
+				<tr>
+					<td>Confirm your Password </td>
+					<td><input type="password" name="re_pw" onfocus="this.value=''" autocomplete="off"><span class="required">*</span></td>
+				</tr>
+				<tr>
+					<td>Email </td>
+					<td><input type="email" name="mail" onfocus="this.value=''" autocomplete="off"><span class="required">*</span></td>
+				</tr>
+				<tr>
+					<td>Mobile no </td>
+					<td><input type="number" name="moNum" onfocus="this.value=''" autocomplete="off"></td>
+				</tr>
+				<tr>
+					<td>Address </td>
+					<td><textarea name="address" rows="5" cols="20" onfocus="this.value=''" autocomplete="off"></textarea><span class="required">*</span></td>
+				</tr>
+				<tr class="new_user_submit">
+					<td colspan="2"> <input type="submit" class="sub_btn" value="Submit" onclick="newUserValidation(fn.value,ln.value,pw.value,re_pw.value,mail.value,moNum.value,address.value)"></td>
+				</tr>
+			</table>
+			<div class="account_container">
+				<a href="userlogin.html">Already have an account</a>
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
